@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Graph Theory</title>
+<style type="text/css">
+.middle {
+	width:50%;
+	margin:0 auto;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.header {
+	color:#5b9bd5;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.def {
+  padding-left: 34px ;
+  text-indent: -34px ;
+} 
+</style>
+
+</head>
+
+<body>
+<div class="middle">
+<h1>Section 1.0: Graph Theory<hr style="margin-top:-.1%;"/></h1>
+<h3 class="header">Simple Graphs</h3>
+<p class="def"><strong>Def: </strong>A simple graph G consists of a non-empty set V, called the vertices (aka nodes) of G and a set E of two-element subset of V. The memebers of E are called the edges of G. G can be denoted as G = (V,E).</p>
+<p class="def"><strong>Def: </strong>Two vertices in a simple graph are said to be adjacent if they are joined by an edge. The edge is said to be incident to the vertices it joins. The number of edges incident to a vertex v is called the degree of the vertex.</p>
+<h3 class="header">Some Common Graphs</h3>
+<ul>
+	<li>The complete graph on n vertices, K<sub>n</sub>, has an edge between every two vertices for a total of n(n-1)/2 edges.</li>
+</ul>
+<figure>
+	<img alt="common graphs" src="images/commongraphs.png" style="display:block; margin:auto"/>
+	<figcaption style="text-align:center">L<sub>5</sub>, K<sub>5</sub> and an empty graph with 5 nodes</figcaption>
+</figure>
+<ul>
+	<li>The empty graph has no edges</li>
+	<li>The n-node graph containing n - 1 edges in sequence is known as the line graph, L<sub>n</sub>. L<sub>n</sub> = (V,E) where
+</li>
+</ul>
+<p style="text-align:center">V = {v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>n</sub>}</p>
+<p style="text-align:center">E = {{v<sub>1</sub>, v<sub>2</sub>}, {v<sub>2</sub>, v<sub>3</sub>}, ..., {v<sub>n-1</sub>, v<sub>n</sub>}}</p>
+
+<h3 class="header">Isomorphism</h3>
+<p class="def"><strong>Def: </strong>If G<sub>1</sub> = (V<sub>1</sub>, E<sub>1</sub> and G<sub>2</sub> = (V<sub>2</sub>, E<sub>2</sub>) are two graphs, then we say G<sub>1</sub> is isomorphic to G<sub>2</sub> iff there exists a bijection f:V<sub>1</sub>->V<sub>2</sub> such that for ever pair of vertices u,v \exists V<sub>1</sub></p>
+<p style="text-align:center">{u,v} \exists E<sub>1</sub> iff {f(u), f(v)} \exists E<sub>2</sub></p>
+<p style="margin-left:32px">The function f is called an isomorphism between G<sub>1</sub> and G<sub>2</sub>.</p>
+<figure>
+	<img alt="isomorphic" src="images/isomorphic.png" style="display:block; margin:auto" />
+	<figcaption style="text-align:center">Two ways of drawing C<sub>5</sub></figcaption>
+</figure>
+<div style="text-align:center;">
+<a href="index.html"><input name="prev" type="button" value="Previous" /></a>
+<a href="index.html"><input name="prev" type="button" value="Home" /></a>
+<a href="graphtheory2.html"><input name="prev" type="button" value="Next" /></a>
+</div>
+
+</div>
+</body>
+
+</html>

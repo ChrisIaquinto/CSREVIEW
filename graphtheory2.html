@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Graph Theory [Continued]</title>
+<style>
+.middle {
+	width:40%;
+	margin:0 auto;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.header {
+	color:#5b9bd5;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.def {
+  padding-left: 34px ;
+  text-indent: -34px ;
+} 
+
+</style>
+</head>
+
+<body>
+<div class="middle">
+	<h1>Graph Theory [Continued]<hr style="margin-top:-.1%;"/></h1>
+	<h3 class="header">Subgraphs</h3>
+	<p class="def"><strong>Def: </strong>A graph G<sub>1</sub> = (V<sub>1</sub>, E<sub>1</sub>) is said to be a subgraph of a graph G<sub>2</sub> = (V<sub>2</sub>, E<sub>2</sub>) if V<sub>1</sub> subset V<sub>2</sub> and E<sub>1</sub> subset E<sub>2</sub>.</p>
+	<h3 class="header">Weighted Graphs</h3>
+	<ul>
+		<li>Sometimes, we use edges to denote a connection between a pair of nodes where the connection has a capacity or weight.
+			<ul><li>Example: resistance of a wire between two terminals, the distance of highway between two cities.</li></ul>
+		</li>
+	</ul>
+	<figure>
+		<img style="display:block; margin:auto;" alt="weighted graph" src="images/weighted.png" />
+		<figcaption style="text-align:center">4-node weighted graph</figcaption>
+	</figure>
+	<h3 class="header">Adjacency Matrices</h3>
+	<ul>
+		<li>There are many ways to represent a graph. We've already seen
+			<ul><li>Drawing the graph</li><li>Representing it with sets V,E</li></ul>
+		</li>
+	</ul>
+	<p class="def"><strong>Def: </strong>Given an n-node graph G = (V,E) where V = {v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>n</sub>}, the adjacency matrix for G is the n x n matrix A<sub>G</sub> = {a<sub>ij</sub>} where</p>
+	<p style="text-align:center">a<sub>ij</sub> = 1 if {v<sub>i</sub>, v<sub>j</sub>} \exists E. 0 otherwise</p>
+	<p style="margin-left:32px">For weighted graphs, replace 1 with the weight w.</p>
+	<figure>
+		<img style="display:block; margin:auto" alt="adjacency" src="images/adjacency.png" />
+		<figcaption style="text-align:center">Adjacency matrix for the 4-node weighted graph above</figcaption>
+	</figure>
+	<div style="text-align:center;">
+		<a href="graphtheory.html"><input name="prev" type="button" value="Previous" /></a>
+		<a href="index.html"><input name="prev" type="button" value="Home" /></a>
+		<a href="datastruct/datastructures.html"><input name="prev" type="button" value="Next" /></a>
+	</div>
+
+</div>
+</body>
+
+</html>
